@@ -188,18 +188,21 @@ header .hero {
   padding: 25px;
   border-radius: 8px;
   border-left: 4px solid #6a5acd;
+  margin-bottom: 20px;
 }
 
 .project-details h4 {
   color: #6a5acd;
   margin-top: 0;
   margin-bottom: 15px;
+  font-size: 1.2em;
 }
 
 .project-details h5 {
   color: #999;
   margin-top: 15px;
   margin-bottom: 10px;
+  font-size: 1em;
 }
 
 .details-list {
@@ -241,31 +244,32 @@ header .hero {
   background: #333;
   color: #999;
   border: none;
-  padding: 8px 15px;
+  padding: 10px 16px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9em;
-  transition: 0.3s;
-  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+  white-space: nowrap;
 }
 
 .project-tab-btn:hover {
   color: #6a5acd;
+  background: #1a1a1a;
 }
 
 .project-tab-btn.active {
   background: #6a5acd;
   color: white;
-  border-bottom: 2px solid #6a5acd;
 }
 
 .project-tab-content {
-  display: none;
+  display: none !important;
+  padding: 20px 0;
   animation: fadeIn 0.3s ease-in;
 }
 
 .project-tab-content.active {
-  display: block;
+  display: block !important;
 }
 
 @keyframes fadeIn {
@@ -351,6 +355,14 @@ header .hero {
   background: #1a1a1a;
   padding: 25px;
   border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  margin-top: 50px;
+  color: #999;
 }
 
 /* Responsive Design */
