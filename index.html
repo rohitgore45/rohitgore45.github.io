@@ -64,9 +64,8 @@
 
 <section id="projects" class="section reveal">
   <h2>Projects</h2>
-  
   <div class="project-grid">
-    <!-- AI Food Calorie Estimator Project Card (Main) -->
+    <!-- Main Featured Project -->
     <div class="project-card project-main">
       <div class="project-header">
         <h3>🍎 AI-Based Food Calorie Estimation System</h3>
@@ -79,7 +78,6 @@
         habits through smart and efficient calorie tracking.
       </p>
 
-      <!-- Tech Stack -->
       <div class="tech-stack">
         <span class="tech-tag">Python</span>
         <span class="tech-tag">TensorFlow</span>
@@ -89,30 +87,21 @@
         <span class="tech-tag">Firebase</span>
       </div>
 
-      <!-- Toggle Button for Details -->
-      <button class="toggle-details-btn" onclick="toggleProjectDetails(this)">View Project Details ▼</button>
+      <button class="toggle-details-btn" onclick="toggleDetails(this)">View Project Details ▼</button>
 
-      <!-- Project Details (Hidden by default) -->
       <div class="project-details" style="display: none;">
-        <!-- Tabs for Phases -->
         <div class="project-tabs">
           <div class="project-tabs-header">
-            <button class="project-tab-btn active" onclick="switchProjectTab(event, 'food-overview')">Overview</button>
-            <button class="project-tab-btn" onclick="switchProjectTab(event, 'food-phase1')">Phase 1</button>
-            <button class="project-tab-btn" onclick="switchProjectTab(event, 'food-phase2')">Phase 2</button>
-            <button class="project-tab-btn" onclick="switchProjectTab(event, 'food-phase3')">Phase 3</button>
-            <button class="project-tab-btn" onclick="switchProjectTab(event, 'food-phase4')">Phase 4</button>
+            <button class="project-tab-btn active" onclick="openTab(event, 'overview')">Overview</button>
+            <button class="project-tab-btn" onclick="openTab(event, 'phase1')">Phase 1</button>
+            <button class="project-tab-btn" onclick="openTab(event, 'phase2')">Phase 2</button>
+            <button class="project-tab-btn" onclick="openTab(event, 'phase3')">Phase 3</button>
+            <button class="project-tab-btn" onclick="openTab(event, 'phase4')">Phase 4</button>
           </div>
 
-          <!-- Overview Tab -->
-          <div id="food-overview" class="project-tab-content active">
+          <div id="overview" class="project-tab-content active">
             <h4>Project Overview</h4>
-            <p>
-              The AI-Based Food Calorie Estimation System is an intelligent application developed to estimate the 
-              calorie content of food items using Artificial Intelligence and Image Processing techniques. The system 
-              allows users to upload or capture food images, after which the AI model detects the food item and 
-              predicts its approximate calorie value.
-            </p>
+            <p>The AI-Based Food Calorie Estimation System is an intelligent application developed to estimate the calorie content of food items using Artificial Intelligence and Image Processing techniques.</p>
             <h5>Objectives:</h5>
             <ul class="details-list">
               <li>Detect food items using image recognition</li>
@@ -123,20 +112,15 @@
             </ul>
           </div>
 
-          <!-- Phase 1 Tab -->
-          <div id="food-phase1" class="project-tab-content">
+          <div id="phase1" class="project-tab-content">
             <h4>Phase 1: Problem Identification & Analysis</h4>
-            <p>
-              Identified the problem of manual calorie tracking and studied existing food calorie estimation systems. 
-              Collected requirements and defined project objectives and scope.
-            </p>
-            <h5>Activities:</h5>
+            <h5>Activities Performed:</h5>
             <ul class="details-list">
-              <li>Identified manual calorie tracking problems</li>
-              <li>Studied existing systems</li>
+              <li>Identified the problem of manual calorie tracking</li>
+              <li>Studied existing food calorie estimation systems</li>
               <li>Collected project requirements</li>
-              <li>Defined objectives and scope</li>
-              <li>Selected suitable technologies</li>
+              <li>Defined project objectives and scope</li>
+              <li>Selected suitable technologies and tools</li>
             </ul>
             <h5>Output:</h5>
             <ul class="details-list">
@@ -146,13 +130,8 @@
             </ul>
           </div>
 
-          <!-- Phase 2 Tab -->
-          <div id="food-phase2" class="project-tab-content">
+          <div id="phase2" class="project-tab-content">
             <h4>Phase 2: Dataset Collection & Model Training</h4>
-            <p>
-              Collected and prepared food image datasets for training the AI model. Data preprocessing and annotation 
-              were performed using Roboflow to improve model accuracy.
-            </p>
             <h5>Activities:</h5>
             <ul class="details-list">
               <li>Collected food image datasets</li>
@@ -170,43 +149,26 @@
             </ul>
           </div>
 
-          <!-- Phase 3 Tab -->
-          <div id="food-phase3" class="project-tab-content">
-            <h4>Phase 3: Application Development & Integration</h4>
-            <p>
-              Developed the application interface and integrated the trained AI model. Created a user-friendly mobile 
-              application where users can upload food images and receive estimated calorie information instantly.
-            </p>
-            <h5>Features Implemented:</h5>
+          <div id="phase3" class="project-tab-content">
+            <h4>Phase 3: Application Development</h4>
+            <h5>Features:</h5>
             <ul class="details-list">
               <li>Food image upload functionality</li>
               <li>Camera capture option</li>
               <li>AI-based food detection</li>
               <li>Calorie estimation display</li>
-              <li>Simple and responsive UI</li>
+              <li>Responsive user interface</li>
             </ul>
             <h5>Output:</h5>
             <ul class="details-list">
               <li>✓ Functional mobile application</li>
-              <li>✓ Successful AI model integration</li>
-              <li>✓ Real-time calorie prediction system</li>
+              <li>✓ AI model integration</li>
+              <li>✓ Real-time prediction system</li>
             </ul>
           </div>
 
-          <!-- Phase 4 Tab -->
-          <div id="food-phase4" class="project-tab-content">
-            <h4>Phase 4: Testing, Results & Future Enhancement</h4>
-            <p>
-              The system was tested using different food images to evaluate prediction accuracy and performance. 
-              Results showed successful food detection and calorie estimation.
-            </p>
-            <h5>Testing Performed:</h5>
-            <ul class="details-list">
-              <li>Functional testing</li>
-              <li>Accuracy testing</li>
-              <li>User interface testing</li>
-              <li>Performance evaluation</li>
-            </ul>
+          <div id="phase4" class="project-tab-content">
+            <h4>Phase 4: Testing & Results</h4>
             <h5>Results:</h5>
             <ul class="details-list">
               <li>✓ Fast food image detection</li>
@@ -217,19 +179,18 @@
             <ul class="details-list">
               <li>Add more food categories</li>
               <li>Improve accuracy</li>
-              <li>Integrate barcode scanning</li>
-              <li>Add diet recommendations</li>
-              <li>Support multilingual interface</li>
+              <li>Barcode scanning</li>
+              <li>Diet recommendations</li>
+              <li>Multilingual support</li>
             </ul>
           </div>
         </div>
 
-        <!-- Skills Gained -->
         <div class="project-skills">
           <h5>Skills Gained:</h5>
           <div class="skills-badges">
             <span class="skill-badge">Machine Learning</span>
-            <span class="skill-badge">Artificial Intelligence</span>
+            <span class="skill-badge">AI</span>
             <span class="skill-badge">Image Processing</span>
             <span class="skill-badge">Dataset Annotation</span>
             <span class="skill-badge">API Integration</span>
@@ -287,25 +248,19 @@
 </footer>
 
 <script>
-// Toggle Project Details
-function toggleProjectDetails(btn) {
-  const details = btn.previousElementSibling;
-  const isHidden = details.style.display === 'none';
-  details.style.display = isHidden ? 'block' : 'none';
-  btn.textContent = isHidden ? 'Hide Project Details ▲' : 'View Project Details ▼';
+function toggleDetails(btn) {
+  const details = btn.nextElementSibling;
+  details.style.display = details.style.display === 'none' ? 'block' : 'none';
+  btn.textContent = details.style.display === 'block' ? 'Hide Project Details ▲' : 'View Project Details ▼';
 }
 
-// Switch Project Tabs
-function switchProjectTab(evt, tabName) {
-  // Hide all tab contents
+function openTab(evt, tabName) {
   const tabContents = document.querySelectorAll('.project-tab-content');
   tabContents.forEach(tab => tab.classList.remove('active'));
-
-  // Remove active class from all buttons
-  const tabButtons = document.querySelectorAll('.project-tab-btn');
-  tabButtons.forEach(btn => btn.classList.remove('active'));
-
-  // Show the current tab and mark the button as active
+  
+  const tabBtns = document.querySelectorAll('.project-tab-btn');
+  tabBtns.forEach(btn => btn.classList.remove('active'));
+  
   document.getElementById(tabName).classList.add('active');
   evt.currentTarget.classList.add('active');
 }
